@@ -11,17 +11,19 @@
 
 ## Getting OpenCV Source Code
 
-1. Create temporary directory, named `build_opencv`.
-
-   ​	`mkdir build_opencv`
-
-   ​	`cd build_opencv`
+1. Clone the Git repository:
 
    ​	`git clone https://github.com/opencv/opencv.git`
 
-2. Configuring. Run
+2. Configuring. Create temporary directory, named `build_opencv`,
 
-   ​	`cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_EXAMPLES=0N`
+   ​    `mkdir build_opencv`
+
+   ​	`cd build_opencv`
+
+   ​	and run:
+
+   ​    `cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_EXAMPLES=0N <path to the OpenCV source directory>`
 
 3. Build. From build directory execute *make*.
 
